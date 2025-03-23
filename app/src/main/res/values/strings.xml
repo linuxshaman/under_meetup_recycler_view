@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Under Meetup #0</string>
+
+    <string name="simple">Simple</string>
+    <string name="view_pool">View Pool</string>
+    <string name="background">Background</string>
+
 </resources>

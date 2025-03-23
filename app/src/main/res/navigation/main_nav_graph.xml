@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="app.linuxshaman.undermeetup0.ui.main.MainFragment"
+        android:label="Main"
+        tools:layout="@layout/recycler_view_based">
+        <action
+            android:id="@+id/action_mainFragment_to_simpleListFragment"
+            app:destination="@id/simpleListFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_backgroundFragment"
+            app:destination="@id/backgroundFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_viewPoolFragment"
+            app:destination="@id/viewPoolFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/simpleListFragment"
+        android:name="app.linuxshaman.undermeetup0.ui.simple.SimpleListFragment"
+        android:label="SimpleListFragment"
+        tools:layout="@layout/recycler_view_based" />
+    <fragment
+        android:id="@+id/viewPoolFragment"
+        android:name="app.linuxshaman.undermeetup0.ui.viewpool.ViewPoolFragment"
+        android:label="ViewPoolFragment"
+        tools:layout="@layout/recycler_view_based" />
+    <fragment
+        android:id="@+id/backgroundFragment"
+        android:name="app.linuxshaman.undermeetup0.ui.background.BackgroundFragment"
+        android:label="BackgroundFragment"
+        tools:layout="@layout/recycler_view_based" />
+</navigation>
