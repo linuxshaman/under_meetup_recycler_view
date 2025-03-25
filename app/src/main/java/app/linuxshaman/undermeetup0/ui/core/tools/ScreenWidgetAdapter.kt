@@ -15,7 +15,7 @@ import javax.inject.Inject
  */
 @FragmentScoped
 class ScreenWidgetAdapter @Inject constructor(
-    private val widgetFactory: WidgetFactory
+    private val widgetFactory: WidgetFactory,
 ) : RecyclerView.Adapter<ScreenWidgetViewHolder>() {
 
     private val differ = AsyncListDiffer(this, ScreenWidgetsDiffUtilCallback())

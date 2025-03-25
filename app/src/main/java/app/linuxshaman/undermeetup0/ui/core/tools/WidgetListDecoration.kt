@@ -41,12 +41,13 @@ class WidgetListDecoration @Inject constructor(
                     when (viewType) {
                         ViewTypes.Button -> {
                             val offset = context.getDimensionPixelSize(R.dimen.offset_l)
+                            top = offset * 5
                             left = offset
                             right = offset
                         }
 
-                        ViewTypes.Loading -> {
-
+                        ViewTypes.Loading, ViewTypes.Gallery, ViewTypes.GalleryItem -> {
+                            //unused
                         }
                     }
                 }

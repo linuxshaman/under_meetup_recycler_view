@@ -22,6 +22,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:layout_marginHorizontal="@dimen/offset_l"
-        android:lines="5"/>
+        android:background="#AA000000"
+        android:lines="5"
+        android:textColor="#FFFFFF"/>
 
 </FrameLayout>

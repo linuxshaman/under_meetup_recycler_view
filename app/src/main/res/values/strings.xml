@@ -5,4 +5,7 @@
     <string name="view_pool">View Pool</string>
     <string name="background">Background</string>
 
+    <string name="gallery_1">Gallery 1</string>
+    <string name="gallery_2">Gallery 2</string>
+
 </resources>

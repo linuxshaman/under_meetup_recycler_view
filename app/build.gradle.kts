@@ -54,6 +54,10 @@ dependencies {
     implementation(libs.core.kotlin.coroutines.core)
     implementation(libs.core.kotlin.coroutines.android)
 
+    implementation(libs.recyclerView)
+
+    implementation(libs.glide)
+
     implementation(libs.hilt.core)
     ksp(libs.hilt.compiler)
 

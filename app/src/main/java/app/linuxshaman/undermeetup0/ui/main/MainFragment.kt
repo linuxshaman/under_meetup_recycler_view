@@ -14,7 +14,9 @@ import app.linuxshaman.undermeetup0.databinding.RecyclerViewBasedBinding
 import app.linuxshaman.undermeetup0.ui.core.action.UIAction
 import app.linuxshaman.undermeetup0.ui.core.action.UICallbackManager
 import app.linuxshaman.undermeetup0.ui.core.tools.ScreenWidgetAdapter
+import app.linuxshaman.undermeetup0.ui.core.tools.ScreenWidgetRecycledViewPool
 import app.linuxshaman.undermeetup0.ui.core.tools.WidgetListDecoration
+import app.linuxshaman.undermeetup0.ui.core.widget.WidgetSupplier
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import javax.inject.Inject
@@ -32,7 +34,13 @@ class MainFragment : Fragment() {
     lateinit var callbackManager: UICallbackManager
 
     @Inject
+    lateinit var viewPool: ScreenWidgetRecycledViewPool
+
+    @Inject
     lateinit var widgetListDecoration: WidgetListDecoration
+
+    @Inject
+    lateinit var widgetSupplier: WidgetSupplier
 
     private val viewModel: MainViewModel by viewModels()
 
@@ -51,8 +59,11 @@ class MainFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        widgetSupplier.onCreate()
+
         binding.widgetList.adapter = adapter
         binding.widgetList.addItemDecoration(widgetListDecoration)
+        binding.widgetList.setRecycledViewPool(viewPool)
 
 
         viewLifecycleOwner.lifecycleScope.launch {
@@ -76,6 +87,7 @@ class MainFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
+        widgetSupplier.onDestroy()
         _binding = null
     }
 

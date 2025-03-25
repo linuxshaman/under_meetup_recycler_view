@@ -13,6 +13,8 @@ navigation = "2.8.9"
 hilt = "2.52"
 ksp = "2.0.21-1.0.27"
 kotlinCoroutines = "1.7.3"
+glide = "4.16.0"
+recyclerView = "1.4.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -32,6 +34,8 @@ hilt-compiler = { group = "com.google.dagger", name = "hilt-compiler", version.r
 
 core-kotlin-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "kotlinCoroutines" }
 core-kotlin-coroutines-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-core", version.ref = "kotlinCoroutines" }
+glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+recyclerView = { group = "androidx.recyclerview", name = "recyclerview", version.ref = "recyclerView" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

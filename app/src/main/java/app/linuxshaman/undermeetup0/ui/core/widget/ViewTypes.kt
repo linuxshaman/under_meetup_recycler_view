@@ -5,5 +5,7 @@ package app.linuxshaman.undermeetup0.ui.core.widget
  */
 enum class ViewTypes {
     Loading,
-    Button
+    Button,
+    Gallery,
+    GalleryItem
 }
