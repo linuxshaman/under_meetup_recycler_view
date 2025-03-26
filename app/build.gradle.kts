@@ -47,12 +47,13 @@ dependencies {
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
     implementation(libs.androidx.activity)
+    implementation(libs.androidx.fragment)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.navigation.fragment)
-    implementation(libs.navigation.ui)
 
     implementation(libs.core.kotlin.coroutines.core)
     implementation(libs.core.kotlin.coroutines.android)
+
+    implementation(libs.lifecycle.runtime)
 
     implementation(libs.recyclerView)
 

@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/offset_l"
-        android:layout_marginTop="@dimen/offset_l"
         android:lines="1"
         android:textAppearance="@style/TextAppearance.Material3.ActionBar.Title"
         app:layout_constraintTop_toTopOf="parent"

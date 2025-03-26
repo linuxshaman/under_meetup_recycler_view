@@ -8,4 +8,13 @@
     <string name="gallery_1">Gallery 1</string>
     <string name="gallery_2">Gallery 2</string>
 
+    <string name="back">Back</string>
+    <string name="get_pro">Get Pro</string>
+    <string name="only_today">only today</string>
+    <string name="cancel">cancel</string>
+
+    <string name="subscribe_format">subscribe for $%d</string>
+    <string name="please_subscribe">PLEASE BUY!!!\n</string>
+    <string name="i_dont_care">I don\'t care...</string>
+
 </resources>

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="offset_l">16dp</dimen>
+    <dimen name="offset_xl">24dp</dimen>
+    <dimen name="offset_xxl">32dp</dimen>
     <dimen name="gallery_item_width">200dp</dimen>
     <dimen name="gallery_item_height">100dp</dimen>
 </resources>
